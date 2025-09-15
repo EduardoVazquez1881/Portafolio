@@ -23,7 +23,7 @@ export const Navegation = () => {
         </button>
 
         {/* Navegación desktop */}
-        <nav className="hidden md:flex md:space-x-1 lg:space-x-12 text-lg font-sans">
+        <nav className="hidden md:flex md:space-x-1 lg:space-x-12 text-sm font-sans">
           {links.map((link: LinkNavigation) => (
             <div className="text-black dark:text-white dark:hover:text-black hover:bg-gray-100 rounded transition-all">
               <a
