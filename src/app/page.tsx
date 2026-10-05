@@ -6,6 +6,7 @@ import Image from "next/image";
 import { motion } from "framer-motion"
 import Linkedin from "@/components/icons/linkedin";
 import Github from "@/components/icons/github";
+import Proyectos from "@/components/ui/proyectos"
 
 const Page = () => {
 
@@ -96,6 +97,16 @@ const Page = () => {
 
         </div>
       </section>
+      <section
+        id="proyectos"
+        className="min-h-screen w-full scroll-mt-20 sm:scroll-mt-24 md:scroll-mt-28 lg:scroll-mt-8 px-4 sm:px-6 md:px-8 lg:px-16 pt-20 sm:pt-24 md:pt-28 lg:pt-20 pb-12 md:pb-16">
+        <div className="w-full max-w-7xl mx-auto">
+          <Proyectos />
+          {/* contenido de proyectos aquí */}
+        </div>
+      </section>
+
+
     </div>
   );
 };

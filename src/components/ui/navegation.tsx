@@ -7,7 +7,7 @@ export const Navegation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="bg-white dark:bg-gray-900 dark:text-white text-black p-4 shadow-lg rounded-b-2xl">
+    <div className="bg-white dark:bg-[#0B0D12] dark:text-white text-black p-4 shadow-lg rounded-b-2xl mb-2">
       <div className="flex justify-between items-center max-w-screen-2xl mx-auto px-8 md:px-12 lg:px-20 py-3">
         <h1 className="text-2xl font-bold hover:scale-101 transition-all duration-500">
           My portafolio
@@ -25,8 +25,8 @@ export const Navegation = () => {
         {/* Navegación desktop */}
         <nav className="hidden md:flex md:space-x-1 lg:space-x-12 text-sm font-sans">
           {links.map((link: LinkNavigation) => (
-              <div key={link.href} className="text-black dark:text-white dark:hover:text-black hover:bg-gray-100 rounded transition-all">
-                <a
+            <div key={link.href} className="text-black dark:text-white dark:hover:text-black hover:bg-gray-100 rounded transition-all">
+              <a
                 href={link.href}
                 className="flex items-center space-x-2 transition-colors duration-300 p-2"
               >
@@ -35,8 +35,8 @@ export const Navegation = () => {
                 />
                 <span>{link.label}</span>
               </a>
-              </div>
-            ))}
+            </div>
+          ))}
         </nav>
       </div>
 
